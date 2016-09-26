@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>百度音乐</title>
+		<meta name="keywords" content="关键词,关键词">
+		<meta name="description" content="">
+	    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style type="text/css">
+            .fork {
+                position: fixed;
+                right: 0;
+                top: 0;
+                z-index: 1;
+            }
+        </style>
+	</head>
+    <body>
+        <a class="fork" href="https://github.com/xlweb/music" target="_blank">
+            <img src="images/forkme.png" width="149" height="149" />
+        </a>
+    	<!--top start-->
+    	<div class="top">
+    		<div class="t_header">
+    			<div class="t_logo">
+    				<a href="#">
+    					<img src="images/logo.png" alt="潭州教育音乐系统" width="134" height="32" />
+    				</a>
+    			</div>
+    			<div class="t_desc">潭州Music音乐系统</div>
+    		</div>
+    	</div>
+    	<!--end top-->
+
+    	<!--content start-->
+    	<div class="content">
+    		<div class="c_box">
+    			<!--c_select start-->
+    			<div class="c_select">
+    				<div class="c_menu">
+    					<ul>
+    						<li class="c_sel">正在播放</li>
+    						<li>播放历史</li>
+    						<li>收藏列表</li>
+    					</ul>
+    				</div>
+    				<div class="c_add">
+    					<span class="c_mymusic">我创建的精选集</span>
+    					<a href="#" class="c_create"></a>
+    					<div class="c_title"><img src="images/01.png" alt="创建选集提示" width="185" height="89" /></div>
+    				</div>
+    			</div>
+    			<!--end c_select-->
+
+                <!--c_lrc start-->
+                <div class="c_lrc">
+                    <div class="l_img">
+                        <img src="images/mv.jpg" alt="美女" width="185" height="185" />
+                    </div>
+                    <a href="#" class="l_btn">亲亲我 ^_^</a>
+                    <div class="l_con">
+                        <ul id="lyrics"></ul>
+                    </div>
+                </div>
+                <!--end c_lrc-->
+
+    			<!--c_list start-->
+    			<div class="c_list">
+    				<div class="c_music" id="c_music">
+    					<div class="m_title">
+    						<a href="#" class="m_check" id="all_check"><input type="checkbox" /></a>
+    						<div class="m_info">
+    							<div class="m_t">歌曲(30)</div>
+    							<div class="m_t">演唱者</div>
+    							<div class="m_t">专辑</div>
+    						</div>
+    					</div>
+    					<div class="m_song">
+                            <div class="s_list" data-link="mp3/0.mp3">
+                                <p class="l_choose"><input type="checkbox"></p>
+                                <p class="l_number"><span>1</span></p>
+                                <div class="l_info">
+                                    <div class="l_t">相心相爱一家人</div>
+                                    <div class="l_t">群星</div>
+                                    <div class="l_t">《一家人》</div>
+                                </div>
+                                <div class="l_love">
+                                    <a href="#" class="l_icon l_like"></a>
+                                    <a href="#" class="l_icon l_more"></a>
+                                    <a href="#" class="l_icon l_del"></a>
+                                </div>
+                            </div>
+    						<div class="s_list" data-link="mp3/1.mp3">
+    							<p class="l_choose"><input type="checkbox"></p>
+    							<p class="l_number">
+    								<span>2</span>
+    							</p>
+    							<div class="l_info">
+    								<div class="l_t">认真的雪</div>
+    								<div class="l_t">薛之谦</div>
+    								<div class="l_t">《未完成的歌》</div>
+    							</div>
+    							<div class="l_love">
+    								<a href="#" class="l_icon l_like"></a>
+    								<a href="#" class="l_icon l_more"></a>
+    								<a href="#" class="l_icon l_del"></a>
+    							</div>
+    						</div>
+                            <div class="s_list" data-link="mp3/2.mp3">
+                                <p class="l_choose"><input type="checkbox"></p>
+                                <p class="l_number"><span>3</span></p>
+                                <div class="l_info">
+                                    <div class="l_t">年轻的战场</div>
+                                    <div class="l_t">张杰</div>
+                                    <div class="l_t">未知</div>
+                                </div>
+                                <div class="l_love">
+                                    <a href="#" class="l_icon l_like"></a>
+                                    <a href="#" class="l_icon l_more"></a>
+                                    <a href="#" class="l_icon l_del"></a>
+                                </div>
+                            </div>
+                            <div class="s_list" data-link="mp3/3.mp3">
+                                <p class="l_choose"><input type="checkbox"></p>
+                                <p class="l_number"><span>4</span></p>
+                                <div class="l_info">
+                                    <div class="l_t">海阔天空</div>
+                                    <div class="l_t">黄家驹</div>
+                                    <div class="l_t">《光辉岁月》</div>
+                                </div>
+                                <div class="l_love">
+                                    <a href="#" class="l_icon l_like"></a>
+                                    <a href="#" class="l_icon l_more"></a>
+                                    <a href="#" class="l_icon l_del"></a>
+                                </div>
+                            </div>
+    						<div class="s_list" data-link="mp3/4.mp3">
+    							<p class="l_choose"><input type="checkbox"></p>
+    							<p class="l_number"><span>5</span></p>
+    							<div class="l_info">
+    								<div class="l_t">让我一次爱个够</div>
+    								<div class="l_t">群星</div>
+    								<div class="l_t">《中国好声音》</div>
+    							</div>
+    							<div class="l_love">
+    								<a href="#" class="l_icon l_like"></a>
+    								<a href="#" class="l_icon l_more"></a>
+    								<a href="#" class="l_icon l_del"></a>
+    							</div>
+    						</div>
+    						<div class="s_list" data-link="mp3/5.mp3">
+    							<p class="l_choose"><input type="checkbox"></p>
+    							<p class="l_number"><span>6</span></p>
+    							<div class="l_info">
+    								<div class="l_t">撕夜</div>
+    								<div class="l_t">阿杜</div>
+    								<div class="l_t">《天黑》</div>
+    							</div>
+    							<div class="l_love">
+    								<a href="#" class="l_icon l_like"></a>
+    								<a href="#" class="l_icon l_more"></a>
+    								<a href="#" class="l_icon l_del"></a>
+    							</div>
+    						</div>
+    						<div class="s_list" data-link="mp3/6.mp3">
+    							<p class="l_choose"><input type="checkbox"></p>
+    							<p class="l_number"><span>7</span></p>
+    							<div class="l_info">
+    								<div class="l_t">五星红旗迎风飘扬</div>
+    								<div class="l_t">刘媛媛</div>
+    								<div class="l_t">《歌唱祖国》</div>
+    							</div>
+    							<div class="l_love">
+    								<a href="#" class="l_icon l_like"></a>
+    								<a href="#" class="l_icon l_more"></a>
+    								<a href="#" class="l_icon l_del"></a>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<!--end c_list-->
+    		</div>
+    	</div>
+    	<!--end content-->
+
+    	<!--player start-->
+    	<div class="player">
+            <!-- start p_left -->
+    		<div class="p_left">
+    			<a href="#" class="p_icon p_pre" title="上一首"></a>
+    			<a href="#" class="p_icon p_play" title="播放"></a>
+    			<a href="#" class="p_icon p_stop" title="暂停"></a>
+    			<a href="#" class="p_icon p_next" title="下一首"></a>
+    			<div class="p_tool">
+    				<a href="#" class="t_t t_list" title="列表循环"></a>
+    				<a href="#" class="t_t t_single" title="单曲循环"></a>
+    				<a href="#" class="t_t t_random" title="随机播放"></a>
+    			</div>
+    		</div>
+            <!-- end p_left -->
+
+            <!-- start p_content -->
+    		<div class="p_content">
+    			<div class="c_name">
+    				<a href="#" class="n_title" id="n_title">相心相爱一家人</a>
+    				<div class="n_group">
+    					<a href="#" class="g_g g_fav"></a>
+    					<a href="#" class="g_g q_share"></a>
+    					<a href="#" class="g_g q_more"></a>
+    				</div>
+    			</div>
+    			<div class="c_time">
+    				<div class="t_left">00:00</div>
+    				<div class="t_center">
+    					<div class="c_played"></div>
+    					<div class="c_current"></div>
+    					<div class="c_futrue"></div>
+    				</div>
+    				<div class="t_right">00:00</div>
+    			</div>
+    		</div>
+            <!-- end p_content -->
+
+            <!-- start p_right -->
+    		<div class="p_right">
+    			<a href="#" class="r_qua">高品质</a>
+    			<div class="r_voice">
+    				<a href="#" class="v_trumpet"></a>
+    				<div class="t_box">
+    					<div class="b_all">
+    						<div class="a_small"></div>
+    						<div class="a_current"></div>
+    						<div class="a_big"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+            <!-- end p_right -->
+    	</div>
+    	<!--end player-->
+        <!--引入jQuery官方类库-->
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
